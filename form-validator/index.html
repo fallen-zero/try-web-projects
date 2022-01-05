@@ -2,6 +2,74 @@
  * @Author       : Zero
  * @Date         : 2022-01-05 16:06:01
  * @LastEditors  : Zero
- * @LastEditTime : 2022-01-05 16:06:01
+ * @LastEditTime : 2022-01-05 17:38:52
  * @FilePath     : /form-validator/index.html
 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 引入图标 -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- 引入css -->
+    <link rel="stylesheet" href="./css/index.css">
+    <!-- 设置标题 -->
+    <title>Form Validator</title>
+</head>
+
+<body>
+    <!-- 最外层容器 -->
+    <div class="container">
+        <!-- 表单 -->
+        <form id="form" class="form">
+            <!-- 标题 -->
+            <h2>Register With Us</h2>
+            <!-- 输入用户名 -->
+            <div class="form-control">
+                <!-- 用户名标签 -->
+                <label for="username">Username</label>
+                <!-- 用户名输入框 -->
+                <input type="text" id="username" autocomplete="off" placeholder="Enter username">
+                <!-- 用户名输入错误提示 -->
+                <small>Error message</small>
+            </div>
+            <!-- 输入邮箱 -->
+            <div class="form-control">
+                <!-- 邮箱标签 -->
+                <label for="email">Email</label>
+                <!-- 邮箱输入框 -->
+                <input type="text" id="email" autocomplete="off" placeholder="Enter email">
+                <!-- 邮箱输入错误提示 -->
+                <small>Error message</small>
+            </div>
+            <!-- 输入密码 -->
+            <div class="form-control">
+                <!-- 密码标签 -->
+                <label for="password">Password</label>
+                <!-- 密码输入框 -->
+                <input type="password" id="password" placeholder="Enter password">
+                <!-- 密码输入错误提示 -->
+                <small>Error message</small>
+            </div>
+            <!-- 确认密码 -->
+            <div class="form-control">
+                <!-- 确认密码标签 -->
+                <label for="password2">Confirm Password</label>
+                <!-- 确认密码输入框 -->
+                <input type="password" id="password2" placeholder="Enter password again">
+                <!-- 确认密码输入错误提示 -->
+                <small>Error message</small>
+            </div>
+            <!-- 提交按钮 -->
+            <button type="submit"> Submit</button>
+        </form>
+    </div>
+    <!-- 引入js -->
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

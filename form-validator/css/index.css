@@ -1,0 +1,190 @@
+/* 引入字体样式 */
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+/* 定义属性值 */
+
+:root {
+    /* 定义输入内容验证成功的颜色 */
+    --success-color: #2ecc71;
+    /* 定义输入内容验证失败的颜色 */
+    --error-color: #e74c3c;
+}
+
+
+/* 全局样式 */
+
+* {
+    /* 元素的总高度和宽度包含内边距和边框 */
+    box-sizing: border-box;
+}
+
+
+/* body样式 */
+
+body {
+    /* 设置背景颜色为#f9fafb */
+    background-color: #f9fafb;
+    /* 设置字体 */
+    font-family: 'Open Sans', sans-serif;
+    /* 弹性布局 */
+    display: flex;
+    /* 将弹性元素的所有项目居中对齐 */
+    align-items: center;
+    /* 在容器中央对齐弹性项目 */
+    justify-content: center;
+    /* 设置最小高度等于视口高度的100% */
+    min-height: 100vh;
+    /* 设置外边距为0 */
+    margin: 0;
+}
+
+
+/* 容器样式 */
+
+.container {
+    /* 设置背景颜色为白色 */
+    background-color: #fff;
+    /* 设置圆角5px */
+    border-radius: 5px;
+    /* 设置边框阴影，水平阴影位置为0，垂直阴影位置为2px，模糊距离为10px，阴影颜色为0.3透明度的黑色 */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    /* 设置宽度为400px */
+    width: 400px;
+}
+
+
+/* 标题样式 */
+
+h2 {
+    /* 文字水平居中 */
+    text-align: center;
+    /* 底部外边距为20px */
+    margin: 0 0 20px;
+}
+
+
+/* 表单样式 */
+
+.form {
+    /* 上下内边距30px，左右内边距40px */
+    padding: 30px 40px;
+}
+
+
+/* 包裹输入框的容器样式 */
+
+.form-control {
+    /* 底部外边距为10px */
+    margin-bottom: 10px;
+    /* 底部内边距为20px */
+    padding-bottom: 20px;
+    /* 设置相对定位 */
+    position: relative;
+}
+
+
+/* 表单容器下的标签的样式 */
+
+.form-control label {
+    /* 设置字体颜色 */
+    color: #777;
+    /* 设置块级元素 */
+    display: block;
+    /* 底部外边距5px */
+    margin-bottom: 5px;
+}
+
+
+/* 表单容器下的输入框样式 */
+
+.form-control input {
+    /* 设置边框，宽度2px，实线，颜色为#f0f0f0 */
+    border: 2px solid #f0f0f0;
+    /* 设置圆角4px */
+    border-radius: 4px;
+    /* 设置块级元素 */
+    display: block;
+    /* 设置宽度为100% */
+    width: 100%;
+    /* 设置内边距为10px */
+    padding: 10px;
+    /* 设置字体大小为14px */
+    font-size: 14px;
+}
+
+
+/* 设置表单下的输入框获取焦点时的样式 */
+
+.form-control input:focus {
+    /* 轮廓大小为0 */
+    outline: 0;
+    /* 设置边框颜色为#777 */
+    border-color: #777;
+}
+
+
+/* 表单下的输入内容验证成功后输入框的样式 */
+
+.form-control.success input {
+    /* 设置边框颜色为定义成功的颜色 */
+    border-color: var(--success-color);
+}
+
+
+/* 表单下的输入内容验证失败后输入框的样式 */
+
+.form-control.error input {
+    /* 设置边框颜色为定义失败的颜色 */
+    border-color: var(--error-color);
+}
+
+
+/* 表单下的错误提示的样式 */
+
+.form-control small {
+    /* 字体颜色为定义失败的颜色 */
+    color: var(--error-color);
+    /* 设置绝对定位 */
+    position: absolute;
+    /* 设置底部坐标为0 */
+    bottom: 0;
+    /* 设置左边坐标为0 */
+    left: 0;
+    /* 不透明度为隐藏 */
+    visibility: hidden;
+}
+
+
+/* 表单下的输入内容验证失败后错误提示的样式 */
+
+.form-control.error small {
+    /* 设置不透明度为显示 */
+    visibility: visible;
+}
+
+
+/* 表单下的按钮样式 */
+
+.form button {
+    /* 设置鼠标样式为小手 */
+    cursor: pointer;
+    /* 设置背景颜色为#3498db */
+    background-color: #3498db;
+    /* 设置边框，宽度为2px，实线，颜色为#3498db */
+    border: 2px solid #3498db;
+    /* 设置圆角为4px */
+    border-radius: 4px;
+    /* 设置字体颜色为白色 */
+    color: #fff;
+    /* 设置块级元素 */
+    display: block;
+    /* 设置字体大小为16px */
+    font-size: 16px;
+    /* 设置内边距为10px */
+    padding: 10px;
+    /* 设置顶部外边距为20px */
+    margin-top: 20px;
+    /* 设置宽度为100% */
+    width: 100%;
+}
