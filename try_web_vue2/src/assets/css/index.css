@@ -1,0 +1,40 @@
+/* 引入字体样式 */
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+/* 定义属性值 */
+
+ :root {
+    /* 定义输入内容验证成功的颜色 */
+    --success-color: #2ecc71;
+    /* 定义输入内容验证失败的颜色 */
+    --error-color: #e74c3c;
+}
+
+
+/* 全局样式 */
+
+* {
+    /* 元素的总高度和宽度包含内边距和边框 */
+    box-sizing: border-box;
+}
+
+
+/* body样式 */
+
+body {
+    /* 设置背景色为#f9fafb */
+    background-color: #f9fafb;
+    /* 设置字体 */
+    font-family: 'Open Sans', sans-serif;
+    /* 弹性布局 */
+    display: flex;
+    /* 将弹性元素的所有项目居中对齐 */
+    align-items: center;
+    /* 在容器中央对齐弹性项目 */
+    justify-content: center;
+    /* 设置最小高度等于视口高度的100% */
+    min-height: 100vh;
+    /* 设置外边距为0 */
+    margin: 0;
+}
